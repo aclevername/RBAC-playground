@@ -10,5 +10,7 @@ resources that its role has permissions to view
 1. Finally to set our current context to use this credential run `kubectl config set-context --current --user=sa-token`
 
 You should now see that you are only able to list pods in the `dev` namespace and not the `prod`
+
 `kubectl get pods -n=dev`
+
 `kubectl get pods -n=prod`
